@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <style type="text/css">
+    *{
+      padding: 0;
+      margin:0;
+
+
+    }
+
+          body{
+        background: hsl(212, 45%, 89%);
+      }
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+    #wrapper{
+      padding:10px;
+      background:  hsl(0, 0%, 100%);
+      display: block;
+      font-family: 'Outfit', sans-serif;
+      text-align: center;
+
+    }
+
+    .thead{
+      font-family: 'Outfit', sans-serif;
+      font-size: 8px;
+      font-weight:  700;
+      padding-top: 20px;
+
+    }
+
+    .thead:nth-child(2){
+      font-weight:  400;
+      font-size: 5px;
+      color: hsl(220, 15%, 55%);
+      padding-top: 10px;
+      padding-bottom: 10px;
+     word-spacing: 4px;
+    }
+
+    section{
+      height: 100vh;
+      padding: 25px;
+      display: flex;
+      background: hsl(212, 45%, 89%);
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+
+
+    }
+
+    #QR{
+      border-radius: 10px;
+    }
+
+    #wrapper{
+      border-radius:10px;
+      width: 170px;
+    }
+
+    @media (max-width: 420px){
+      #QR{
+        max-width: 375px;
+        display: block;
+        overflow: hidden;
+      }
+
+       #wrapper{
+      border-radius:20px;
+      width: 300px;
+    }
+
+      #QR img{
+        width: 100%;
+      }
+
+    .thead{
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight:  700;
+      padding-top: 20px;
+
+    }
+
+    .thead:nth-child(2){
+      font-weight:  400;
+      font-size: 15px;
+      color: hsl(220, 15%, 55%);
+      padding-top: 20px;
+      padding-bottom: 50px;
+     word-spacing: 4px;
+    }
+
+    }
+
+    #QR{
+      /*width: 40%;*/
+      max-width: 1440px;
+        display: block;
+        overflow: hidden;
+    }
+
+    #QR img{
+      width: 100%;
+    }
+
+  </style>
+
+  </head>
+<body>
+
+  <section>
+    
+    <div id="wrapper">
+        
+        <div id="QR">
+          <img src="./images/image-qr-code.png">
+          
+        </div>
+
+        <div id="text-comp">
+          <div class="thead">
+            <p>Improve your front-end</p>
+            <p>skills by building projects</p>
+          </div>
+
+          <div class="thead">
+            Scan the QR code to visit Frontend Mentor and take your coding skills to the next level  
+          </div>
+          
+        </div>
+
+
+    </div>
+
+
+
+  </section>
+
+
+
+ 
+</body>
+</html>
